@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Prototype</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript"> 
+      document.onmousedown = function() { 
+        document.body.setAttribute("class", "is-highlighted"); 
+      } 
+      document.onmouseup = function() { 
+        document.body.setAttribute("class", ""); 
+      } 
+    </script> 
+    <style> 
+      html, body { 
+        padding: 0; 
+        margin: 0; 
+      } 
+      a { 
+        position: absolute; 
+      } 
+      body.is-highlighted a { 
+        background-color: #e5e5e5; 
+        opacity: .2; 
+      } 
+      main { 
+        position: relative; 
+        margin: 0 auto; 
+      } 
+      .top { 
+        position: fixed; 
+        z-index: 6; 
+        top: 0; 
+      } 
+      .left { 
+        position: fixed; 
+        z-index: 6; 
+        top: 0; 
+        left: 0; 
+      } 
+      .bottom { 
+        position: fixed; 
+        z-index: 6; 
+        bottom: 0; 
+      } 
+      .right { 
+        position: fixed; 
+        z-index: 6; 
+        top: 0; 
+        right: 0; 
+      } 
+    </style> 
+  </head>
+  <body><main>
+<!-- 00_home -->
+<img class="artboardImage" src="img/00_home.png" width="1440">
+<a href="01_CS Messenger.html" style="z-index: 4; left: 109px; top: 236px; width: 540px; height: 105px"></a>
+<a href="02_Product QnA.html" style="z-index: 4; left: 107px; top: 369px; width: 411px; height: 103px"></a>
+<a href="03_Rocketphone.html" style="z-index: 4; left: 115px; top: 500px; width: 534px; height: 103px"></a>
+<a href="04_Return to RocketMoney.html" style="z-index: 4; left: 747px; top: 236px; width: 570px; height: 105px"></a>
+<a href="05_Point Swap.html" style="z-index: 4; left: 748px; top: 369px; width: 544px; height: 103px"></a>
+</main></body></html>
